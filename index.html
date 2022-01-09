@@ -1,0 +1,164 @@
+<!-- TODO -->
+<!-- Finish Project Card Design (graphics, tech stack, box shawdows, coming soon banner, floating on hover) -->
+<!-- Gray background for project section -->
+<!-- Circles around Icons and associated animations/highlights (Matt Farley)-->
+<!-- Project Pages Design - see adriengervaix.com and PaperPillar -->
+<!-- Animate Waves at intro -->
+<!-- Load on scroll (see saved article) -->
+<!-- Update to be fully responsive (ie CSS positioning etc) -->
+<!-- CV download -->
+<!-- Email/Contact Section (include click to copy email address to clipboard) -->
+<!-- Project List filters? Clickable tech list -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Phoon | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="./images/bp-avatar.png" />
+    <script src="https://kit.fontawesome.com/e84502919a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="image-container">
+        <div id="window-container">
+            <div id='top-bar'>
+                <img id="top-bar-logo" src="/images/bp-logo-white.png" alt="">
+                <nav>
+                    <a href=#about-me>
+                        <li class="hvr-underline-from-center">about me</li>
+                    </a>
+                    <a href="#projects">
+                        <li class="hvr-underline-from-center">portfolio</li>
+                    </a>
+                </nav>
+            </div>
+
+            <div id="intro">
+                <div id="heading-container">
+                    <h1>Hi! I'm Ben.</h1>
+                </div>
+                <p>Thanks for visiting. Take a look around to see what I've been up to recently.</p>
+                <a href="#about-me" class="hvr-bob"><i class="fas fa-chevron-circle-down fa-lg hvr-icon"></i></a>
+            </div>
+        </div>
+    </header>
+    <div id="spacer">
+    </div>
+
+    <div id="about-me">
+        <div id="about-me-container">
+            <div id="about-me-left">
+                <img src="/images/bp-avatar.png" alt="Me">
+            </div>
+            <div id="about-me-right">
+                <p id="about-me-p1">I am a budding web developer looking to explore all the opportunities the world of
+                    technology has to offer.
+                </p>
+                <p id="about-me-p2">I am working towards becoming a full-stack developer and eventually working
+                    full-time building cool things that make people's lives easier and more enjoyable!</p>
+                <div class="socials">
+                    <a href="https://github.com/benphoon" class="hvr-bob " target="_blank"><i
+                            class="fab fa-github fa-lg hvr-icon"></i></a>
+                    <a href="https://linkedin.com/in/ben-phoon" class="hvr-bob" target="_blank"><i
+                            class="fab fa-linkedin-in fa-lg hvr-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="projects">
+        <h2>What I've Been Working On</h2>
+        <div id="project-space">
+            <div class="project-card">
+                <div class="project-info project-card-left">
+                    <h3>PizzaPlace</h3>
+                    <p>Restaurant Website Mock-up</p>
+                    <div class="tech-stack">
+                        <div class="tech-card">
+                            <i class="fab fa-html5"></i>
+                            <p class="tech-name">HTML</p>
+                        </div>
+                    </div>
+                    <button class="view-project-button hvr-float" id="button-pizzaplace">View Project</button>
+                </div>
+                <div class="project-graphic project-card-right" id="graphic-pizzaplace">
+                    <img src="/images/pizzaplace.png" alt="PizzaPlace">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-graphic project-card-left" id="graphic-weatherapp">
+                    <img src="" alt="">
+                </div>
+                <div class="project-info project-card-right">
+                    <h3>WeatherApp</h3>
+                    <p>Connecting to and displaying data from WeatherAPI</p>
+                    <div class="tech-stack">
+                        <div class="tech-card">
+                            <i></i>
+                            <p></p>
+                        </div>
+                    </div>
+                    <button class="view-project-button hvr-float" id="button-weatherapp">View Project</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info project-card-left">
+                    <h3>SportsHub</h3>
+                    <p>Sports Scores Amalgamation</p>
+                    <div class="tech-stack">
+                        <div class="tech-card">
+                            <i></i>
+                            <p></p>
+                        </div>
+                    </div>
+                    <button class="view-project-button hvr-float" id="button-sportshub">View Project</button>
+                </div>
+                <div class="project-graphic project-card-right" id="graphic-sportshub">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-graphic project-card-left" id="graphic-jammming">
+                    <img src="" alt="">
+                </div>
+                <div class="project-info project-card-right">
+                    <h3>Jammming</h3>
+                    <p>Connecting to Spotify API</p>
+                    <div class="tech-stack">
+                        <div class="tech-card">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <button class="view-project-button hvr-float" id="button-jammming">View Project</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="footer-window-container">
+            <div id="footer-content">
+                <img id="footer-logo" src="/images/bp-logo-black.png" alt="">
+                <p>"Dream big. Start small. But most of all, start."</p>
+                <div class="socials">
+                    <a href="https://github.com/benphoon" class="hvr-bob " target="_blank"><i
+                            class="fab fa-github fa-lg hvr-icon"></i></a>
+                    <a href="https://linkedin.com/in/ben-phoon" class="hvr-bob" target="_blank"><i
+                            class="fab fa-linkedin-in fa-lg hvr-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
