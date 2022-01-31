@@ -21,6 +21,7 @@
     <title>Ben Phoon | Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="./images/bp-avatar.png" />
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/e84502919a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -63,10 +64,10 @@
                 <p id="about-me-p2">I am working towards becoming a full-stack developer and eventually working
                     full-time building cool things that make people's lives easier and more enjoyable!</p>
                 <div class="socials">
-                    <a href="https://github.com/benphoon" class="hvr-bob " target="_blank"><i
-                            class="fab fa-github fa-lg hvr-icon"></i></a>
-                    <a href="https://linkedin.com/in/ben-phoon" class="hvr-bob" target="_blank"><i
-                            class="fab fa-linkedin-in fa-lg hvr-icon"></i></a>
+                    <a href="https://github.com/benphoon" class="hvr-bob " target="_blank">
+                        <i class="fab fa-github fa-lg hvr-icon"></i></a>
+                    <a href="https://linkedin.com/in/ben-phoon" class="hvr-bob" target="_blank">
+                        <i class="fab fa-linkedin-in fa-lg hvr-icon"></i></a>
                 </div>
             </div>
         </div>
@@ -75,72 +76,77 @@
 
     <div id="projects">
         <h2>What I've Been Working On</h2>
-        <div id="project-space">
-            <div class="project-card">
-                <div class="project-info project-card-left">
-                    <h3>PizzaPlace</h3>
-                    <p>Restaurant Website Mock-up</p>
-                    <div class="tech-stack">
-                        <div class="tech-card">
-                            <i class="fab fa-html5"></i>
-                            <p class="tech-name">HTML</p>
-                        </div>
+        <div id="project-space" data-carousel>
+            <button class="carousel-button prev hvr-icon-back" data-carousel-button="prev"><i
+                    class="fas fa-chevron-circle-left fa-lg hvr-icon"></i></button>
+            <button class="carousel-button next hvr-icon-forward" data-carousel-button="next"><i
+                    class="fas fa-chevron-circle-right fa-lg hvr-icon"></i></button>
+            <ul data-cards>
+                <li class="project-card" data-active>
+                    <div class="project-graphic project-card-left" id="graphic-weatherapp">
+                        <img src="" alt="">
                     </div>
-                    <button class="view-project-button hvr-float" id="button-pizzaplace">View Project</button>
-                </div>
-                <div class="project-graphic project-card-right" id="graphic-pizzaplace">
-                    <img src="/images/pizzaplace.png" alt="PizzaPlace">
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-graphic project-card-left" id="graphic-weatherapp">
-                    <img src="" alt="">
-                </div>
-                <div class="project-info project-card-right">
-                    <h3>WeatherApp</h3>
-                    <p>Connecting to and displaying data from WeatherAPI</p>
-                    <div class="tech-stack">
-                        <div class="tech-card">
-                            <i></i>
-                            <p></p>
+                    <div class="project-info project-card-right">
+                        <h3>WeatherApp</h3>
+                        <p>Connecting to and displaying data from OpenWeatherAPI</p>
+                        <div class="tech-stack">
+                            <div class="tech-card">
+                                <i></i>
+                                <p></p>
+                            </div>
                         </div>
+                        <button class="view-project-button hvr-float" id="button-weatherapp">View Project</button>
                     </div>
-                    <button class="view-project-button hvr-float" id="button-weatherapp">View Project</button>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-info project-card-left">
-                    <h3>SportsHub</h3>
-                    <p>Sports Scores Amalgamation</p>
-                    <div class="tech-stack">
-                        <div class="tech-card">
-                            <i></i>
-                            <p></p>
+                </li>
+                <li class="project-card">
+                    <div class="project-info project-card-left">
+                        <h3>SportsHub</h3>
+                        <p>Full stack sports API integration app</p>
+                        <div class="tech-stack">
+                            <div class="tech-card">
+                                <i></i>
+                                <p></p>
+                            </div>
                         </div>
+                        <button class="view-project-button hvr-float" id="button-sportshub">View Project</button>
                     </div>
-                    <button class="view-project-button hvr-float" id="button-sportshub">View Project</button>
-                </div>
-                <div class="project-graphic project-card-right" id="graphic-sportshub">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-graphic project-card-left" id="graphic-jammming">
-                    <img src="" alt="">
-                </div>
-                <div class="project-info project-card-right">
-                    <h3>Jammming</h3>
-                    <p>Connecting to Spotify API</p>
-                    <div class="tech-stack">
-                        <div class="tech-card">
-                            <i class="fab fa-html5"></i>
-                            <p>HTML</p>
+                    <div class="project-graphic project-card-right" id="graphic-sportshub">
+                        <img src="" alt="">
+                    </div>
+                </li>
+                <li class="project-card">
+                    <div class="project-graphic project-card-left" id="graphic-jammming">
+                        <img src="" alt="">
+                    </div>
+                    <div class="project-info project-card-right">
+                        <h3>Jammming</h3>
+                        <p>Connecting to Spotify API</p>
+                        <div class="tech-stack">
+                            <div class="tech-card">
+                                <i class="fab fa-html5"></i>
+                                <p>HTML</p>
+                            </div>
                         </div>
+                        <button class="view-project-button hvr-float" id="button-jammming">View Project</button>
                     </div>
-                    <button class="view-project-button hvr-float" id="button-jammming">View Project</button>
-                </div>
-            </div>
-            
+                </li>
+                <li class="project-card">
+                    <div class="project-info project-card-left">
+                        <h3>PizzaPlace</h3>
+                        <p>Restaurant Website Mock-up</p>
+                        <div class="tech-stack">
+                            <div class="tech-card">
+                                <i class="fab fa-html5"></i>
+                                <p class="tech-name">HTML</p>
+                            </div>
+                        </div>
+                        <button class="view-project-button hvr-float" id="button-pizzaplace">View Project</button>
+                    </div>
+                    <div class="project-graphic project-card-right" id="graphic-pizzaplace">
+                        <img src="/images/pizzaplace.png" alt="PizzaPlace">
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 

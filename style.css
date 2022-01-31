@@ -431,18 +431,73 @@ nav li {
 #projects h2 {
     color: black;
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
     font-size: 2.5em;
 }
 
-.project-card {
-    text-align: center;
-    width: 75vw;
-    height: 78vh;
-    margin: 1.5em;
-    border-radius: 20px;
+#project-space {
+    height: 90vh;
+    width: 90vw;
+
+    position: relative;
     display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    /* border: 1px solid red; */
+}
+
+#project-space > button {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: none;
+    border: none;
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+#project-space > button > i {
+    color: black;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    background-color: #001d3d;
+}
+
+.carousel-button.prev {
+    left: 0.1em;
+}
+
+.carousel-button.next {
+    right: 0.1em;
+}
+
+#project-space > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-card {
+    position: absolute;
+    inset: 5vw;
+    opacity: 0;
+    
+    text-align: center;
+    border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+    display: flex;
+    
+}
+
+.project-card[data-active] {
+    z-index: 5;
+    opacity: 1;
 }
 
 .project-card-left {
@@ -465,13 +520,17 @@ nav li {
     color: black;
     margin-top: 2em;
     margin-left: 20%;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .project-info p {
     color: grey;
     margin-top: 1em;
     margin-left: 20%;
+    max-width: 60%;
+
+    font-size: 1em;
+    line-height: 1em;
 }
 
 .tech-stack {
