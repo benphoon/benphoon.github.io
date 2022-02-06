@@ -619,8 +619,8 @@ nav li {
     border: none;
 }
 
-#button-pizzaplace {
-    background-image: linear-gradient(225deg,#d41a1a,#e9cec7);
+#button-sage {
+    background-image: linear-gradient(225deg,#8a8888,#e9cec7);
     box-shadow: 0 11px 36px 0 rgba(70,89,138,.25);
 }
 
@@ -652,14 +652,21 @@ nav li {
     height: 70%;
 }
 
-#graphic-pizzaplace {
-    background: url(/images/project-graphic-red.svg);
+#graphic-sage {
+    background: url(/images/sage-website-mock.png);
     background-size: cover;
+    background-position: center;
+}
+
+#sage-mock-laptop {
+    height: 30vh;
 }
 
 #graphic-weatherapp {
-    background: url(/images/project-graphic-blue.svg);
+    background: url(/images/weatherapp-mock.png);
     background-size: cover;
+    background-repeat: none;
+    position: right;
 }
 
 #graphic-sportshub {
