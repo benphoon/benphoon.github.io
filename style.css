@@ -242,7 +242,7 @@ nav li {
     right: 0;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
     #intro {
         text-align: center;
         display: flex;
@@ -270,7 +270,7 @@ nav li {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     #intro {
         text-align: center;
         display: flex;
@@ -411,7 +411,7 @@ nav li {
     color: black;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     #about-me {
         height: 80vh;
         display: flex;
@@ -510,7 +510,7 @@ nav li {
     animation-iteration-count: infinite;
 }
 
-@media (min-width: 400px){
+@media (min-width: 500px){
     #about-me img {
         height: 50vh;
         width: auto;
@@ -527,7 +527,7 @@ nav li {
 }
 
 /* Project section */
-@media (min-width: 400px){
+@media (min-width: 500px){
 
 #projects {
     margin-top: 20vh;
@@ -755,7 +755,7 @@ nav li {
 }
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     #projects {
         margin-top: 10vh;
         display: flex;
