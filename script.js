@@ -20,3 +20,36 @@ buttons.forEach(button => {
         delete activeCard.dataset.active
     })
 })
+
+// Email copy functionality
+function copyEmail() {
+    const email = "ben.phoon@example.com"; // Replace with your actual email
+    const emailText = document.getElementById('email-text');
+    const copyFeedback = document.getElementById('copy-feedback');
+
+    navigator.clipboard.writeText(email).then(() => {
+        emailText.style.display = 'none';
+        copyFeedback.style.display = 'inline';
+
+        setTimeout(() => {
+            emailText.style.display = 'inline';
+            copyFeedback.style.display = 'none';
+        }, 2000);
+    }).catch(() => {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = email;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+
+        emailText.style.display = 'none';
+        copyFeedback.style.display = 'inline';
+
+        setTimeout(() => {
+            emailText.style.display = 'inline';
+            copyFeedback.style.display = 'none';
+        }, 2000);
+    });
+}
