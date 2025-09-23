@@ -609,7 +609,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: #fefefe;
     position: relative;
     padding: 5vh 0;
 }
@@ -966,7 +966,7 @@ footer i {
 
 /* Current Role section */
 #current-role {
-    background: linear-gradient(135deg, var(--ivory-color) 0%, #f8f9fa 100%);
+    background: #fefefe;
     padding: 5vh 0;
     display: flex;
     justify-content: center;
@@ -1053,7 +1053,7 @@ footer i {
 
 /* Technical Skills section */
 #technical-skills {
-    background: var(--white-color);
+    background: #fefefe;
     padding: 5vh 0;
     display: flex;
     justify-content: center;
@@ -1145,7 +1145,7 @@ footer i {
 
 /* Certifications section */
 #certifications {
-    background: linear-gradient(135deg, #f8f9fa 0%, var(--ivory-color) 100%);
+    background: #fefefe;
     padding: 5vh 0;
     display: flex;
     justify-content: center;
