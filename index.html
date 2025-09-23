@@ -219,121 +219,81 @@
     </div>
 
     <div id="projects">
-        <h2>What I've Been Working On</h2>
-        <div id="title-underline"></div>
-        <div id="project-space" data-carousel>
-            <button class="carousel-button prev hvr-icon-back" data-carousel-button="prev"><i
-                    class="fas fa-chevron-circle-left fa-lg hvr-icon"></i></button>
-            <button class="carousel-button next hvr-icon-forward" data-carousel-button="next"><i
-                    class="fas fa-chevron-circle-right fa-lg hvr-icon"></i></button>
-            <ul data-cards>
-                <li class="project-card" data-active>
-                    <div class="project-graphic project-card-left" id="graphic-weatherapp">
-                        <img src="" alt="">
-                    </div>
-                    <div class="project-info project-card-right">
-                        <h3>WeatherApp</h3>
-                        <p>Connecting to and displaying data from OpenWeatherAPI</p>
-                        <div class="tech-stack">
-                            <div class="tech-card">
-                                <i class="fab fa-react fa-lg"></i>
-                                <h4>React.js</h4>
-                            </div>
-                            <div class="tech-card">
-                                <i class="fab fa-css3 fa-lg"></i>
-                                <h4>CSS</h4>
-                            </div>
+        <div class="projects-container">
+            <h2>Recent Projects</h2>
+            <div id="title-underline"></div>
+            <p class="projects-intro">Here are some of the applications I've built recently, showcasing different technologies and problem-solving approaches.</p>
+
+            <div class="projects-grid">
+                <div class="project-card modern">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-golf-ball"></i>
                         </div>
-                        <div class="buttons-container">
-                            <a href="https://github.com/benphoon/weather-app" target="_blank">
-                                <button class="view-project-button hvr-float" id="button-weatherapp">View
-                                    Repository</button>
-                            </a>
-                            <a href="http://bp-react-weatherapp.herokuapp.com/" target="_blank">
-                                <button class="view-project-button hvr-float" id="button-weatherapp">View
-                                    Project</button>
-                            </a>
+                        <div class="project-title">
+                            <h3>ShotMate</h3>
+                            <span class="project-type">Golf Tracker</span>
                         </div>
                     </div>
-                </li>
-                <li class="project-card">
-                    <div class="project-info project-card-left">
-                        <h3>SportsHub</h3>
-                        <p>Full stack sports API integration app</p>
-                        <div class="tech-stack">
-                            <div class="tech-card">
-                                <i class="fab fa-react fa-lg"></i>
-                                <h4>React.js</h4>
-                            </div>
-                            <div class="tech-card">
-                                <i class="fab fa-css3 fa-lg"></i>
-                                <h4>CSS</h4>
-                            </div>
-                            <div class="tech-card">
-                                <img id="express-logo" src="./images/express-logo.png" alt="Express.js logo" />
-                                <h4>Express.js</h4>
+
+                    <div class="project-screenshots">
+                        <div class="screenshot-gallery">
+                            <div class="screenshot-placeholder-static">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>App Preview</p>
+                                <span class="coming-soon">Screenshots coming soon</span>
                             </div>
                         </div>
-                        <div class="buttons-container">
-                            <a href="https://github.com/benphoon/sportshub" target="_blank">
-                                <button class="view-project-button hvr-float" id="button-sportshub">View
-                                    Repository</button>
-                            </a>
+                    </div>
+
+                    <p class="project-description">A simple, clean golf score tracker for quick rounds. Track 9 or 18-hole scores with running totals and session storage. Mobile-first design for on-course use.</p>
+                    <div class="tech-stack-modern">
+                        <span class="tech-tag">Next JS</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/benphoon/golf-tracker" class="project-btn primary" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Repository
+                        </a>
+                        <a href="#" class="project-btn secondary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card modern">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-title">
+                            <h3>Weather App</h3>
+                            <span class="project-type">Weather Forecast</span>
                         </div>
                     </div>
-                    <div class="project-graphic project-card-right" id="graphic-sportshub">
-                        <img id="sportshub-logo" src="./images/sportshub-logo-optimised.svg" alt="SportsHub logo">
-                    </div>
-                </li>
-                <li class="project-card">
-                    <div class="project-graphic project-card-left" id="graphic-jammming">
-                        <img src="" alt="">
-                    </div>
-                    <div class="project-info project-card-right">
-                        <h3>Jammming</h3>
-                        <p>Connecting to Spotify API</p>
-                        <div class="tech-stack">
-                            <div class="tech-card">
-                                <i class="fab fa-js fa-lg"></i>
-                                <h4>Javascript</h4>
-                            </div>
-                            <div class="tech-card">
-                                <i class="fab fa-html5 fa-lg"></i>
-                                <h4>HTML</h4>
-                            </div>
-                        </div>
-                        <div class="buttons-container">
-                            <a href="https://github.com/benphoon/jammming" target="_blank">
-                                <button class="view-project-button hvr-float" id="button-jammming">View
-                                    Repository</button>
-                            </a>
+
+                    <div class="project-screenshots">
+                        <div class="screenshot-gallery">
+                            <img src="./images/weatherapp-mock.png" alt="Weather App Screenshot" class="screenshot-image">
                         </div>
                     </div>
-                </li>
-                <li class="project-card">
-                    <div class="project-info project-card-left">
-                        <h3>Sage Financial Group</h3>
-                        <p>Corporate Website Redesign</p>
-                        <div class="tech-stack">
-                            <div class="tech-card">
-                                <i class="fab fa-react fa-lg"></i>
-                                <h4>React.js</h4>
-                            </div>
-                            <div class="tech-card">
-                                <i class="fab fa-css3 fa-lg"></i>
-                                <h4>CSS</h4>
-                            </div>
-                        </div>
-                        <div class="buttons-container">
-                            <a href="https://github.com/benphoon/sage-website" target="_blank">
-                                <button class="view-project-button hvr-float" id="button-sage">View Repository</button>
-                            </a>
-                        </div>
+
+                    <p class="project-description">Clean, responsive weather application with location-based forecasts, weather alerts, and detailed meteorological data visualization.</p>
+                    <div class="tech-stack-modern">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">OpenWeather API</span>
+                        <span class="tech-tag">CSS3</span>
                     </div>
-                    <div class="project-graphic project-card-right" id="graphic-sage">
+                    <div class="project-links">
+                        <a href="https://github.com/benphoon/weather-app" class="project-btn primary" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Repository
+                        </a>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
         <a id="projects-nav" href="#lets-connect" class="hvr-icon-down"><i
                 class="fas fa-chevron-circle-down fa-lg hvr-icon"></i></a>
