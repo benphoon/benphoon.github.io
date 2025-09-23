@@ -409,7 +409,7 @@ nav li {
 
 /* About me */
 #about-me {
-    height: 80vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
 
@@ -463,12 +463,12 @@ nav li {
 
 @media (max-width: 500px) {
     #about-me {
-        height: 80vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         background: url('images/title-spacer.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -605,7 +605,8 @@ nav li {
 @media (min-width: 500px){
 
 #projects {
-    margin-top: 20vh;
+    margin-top: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -613,6 +614,7 @@ nav li {
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(229,232,245,1) 50%, rgba(255,255,255,1) 100%);
     position: relative;
+    padding: 5vh 0;
 }
 
 #projects h2 {
@@ -840,7 +842,8 @@ nav li {
 
 @media (max-width: 500px){
     #projects {
-        margin-top: 10vh;
+        margin-top: 0;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -848,6 +851,7 @@ nav li {
         background: rgb(255,255,255);
         background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(229,232,245,1) 50%, rgba(255,255,255,1) 100%);
         position: relative;
+        padding: 5vh 0;
 
         /* border: 1px solid green; */
     }
@@ -1152,7 +1156,7 @@ footer i {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 100vh;
 }
 
 #current-role-container {
@@ -1239,7 +1243,7 @@ footer i {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 #skills-container {
@@ -1331,7 +1335,7 @@ footer i {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
+    min-height: 100vh;
 }
 
 #certifications-container {
@@ -1420,7 +1424,7 @@ footer i {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 #connect-container {
